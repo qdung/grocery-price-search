@@ -1,1 +1,1 @@
-This is the Chrome extension that searchs price from many market/supermarket in Vietnam, current support Winmart and Lotte
+This Chrome extension allows you to search for prices across various markets and supermarkets in Vietnam, currently supporting Winmart and Lotte."
