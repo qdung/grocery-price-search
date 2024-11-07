@@ -144,7 +144,9 @@ function fetchWinmart(searchTerm) {
         productName.classList.add("product-name");
 
         const productPrice = document.createElement("p");
-        productPrice.textContent = `Giá: ${result.price.salePrice}`;
+        productPrice.textContent = `Giá: ${formatVietnameseCurrency(
+          result.price.salePrice
+        )}`;
         listItem.appendChild(productImage);
         listItem.appendChild(productName);
         listItem.appendChild(productPrice);
@@ -156,4 +158,8 @@ function fetchWinmart(searchTerm) {
       hideLoadingSpinner();
       console.error("Error fetching products Winmart results:", error);
     });
+}
+
+function formatVietnameseCurrency(number) {
+  return number.toLocaleString("vi-VN", { style: "currency", currency: "VND" });
 }
