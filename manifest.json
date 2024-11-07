@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Search price of product in VN glocery market",
+  "version": "1.0",
+  "description": "A Chrome extension that searches price of product in Vietnam supermarket.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["activeTab"]
+}

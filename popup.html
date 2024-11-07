@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đi chợ online</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Đi chợ online</h1>
+      <input type="text" id="searchInput" placeholder="Tìm kiếm" />
+      <button id="searchButton">Search</button>
+      <div id="loadingSpinner" class="spinner" style="display: none"></div>
+      <div id="results">
+        <div class="column">
+          <h2>Winmart</h2>
+          <ul id="winmart"></ul>
+        </div>
+        <div class="separator"></div>
+        <div class="column">
+          <h2>Lotte</h2>
+          <ul id="lotte"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
